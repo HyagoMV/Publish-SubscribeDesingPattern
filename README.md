@@ -16,7 +16,7 @@
 - São `patterns` com caracteristicas semelhantes com duas diferenças principais:
 	- Primeira Diferença:
 		- No `Observer Pattern` os `Observers` conhecem os `Observables`
-		- No `Publish & Subscribe Pattern` os `Publish` não conhecem os `Subscribe` e vice-versa
+		- No `Publish & Subscribe Pattern` os `Publishers` não conhecem os `Subscribers` e vice-versa
 	- Segunda Defirença:
 		- No `Observer Pattern` é implementado de forma **síncrona**
 			- Quando ocorre um `event` o `Observables` invoca o método apropriado de todos os `Observables`
