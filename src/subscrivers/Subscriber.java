@@ -36,7 +36,7 @@ public class Subscriber {
 
 	public void messageNotify() {
 		for (Message message : subscriberMessages) {
-			System.out.println("Message Topic -> " + message.getTopic() + " : " + message.getPayload());
+			System.out.println(message.getTap() + " : " + message.getPayload());
 		}
 	}
 

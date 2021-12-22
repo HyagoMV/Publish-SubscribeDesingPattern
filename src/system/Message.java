@@ -1,23 +1,23 @@
 package system;
 
 public class Message {
-	private String topic;
+	private String tag;
 	private String payload;
 
 	public Message() {
 	}
 
 	public Message(String topic, String payload) {
-		this.topic = topic;
+		this.tag = topic;
 		this.payload = payload;
 	}
 
-	public String getTopic() {
-		return topic;
+	public String getTap() {
+		return tag;
 	}
 
-	public void setTopic(String topic) {
-		this.topic = topic;
+	public void setTag(String tag) {
+		this.tag = tag;
 	}
 
 	public String getPayload() {

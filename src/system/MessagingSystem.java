@@ -50,7 +50,7 @@ public class MessagingSystem {
 		} else {
 			while (!messagesQueue.isEmpty()) {
 				Message message = messagesQueue.remove();
-				String topic = message.getTopic();
+				String topic = message.getTap();
 
 				Set<Subscriber> subscribersOfTopic = subscribersTopicMap.get(topic);
 				
@@ -73,7 +73,7 @@ public class MessagingSystem {
 			while (!messagesQueue.isEmpty()) {
 				Message message = messagesQueue.remove();
 
-				if (message.getTopic().equalsIgnoreCase(topic)) {
+				if (message.getTap().equalsIgnoreCase(topic)) {
 
 					Set<Subscriber> subscribersOfTopic = subscribersTopicMap.get(topic);
 
