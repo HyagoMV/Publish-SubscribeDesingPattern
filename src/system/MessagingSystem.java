@@ -53,10 +53,14 @@ public class MessagingSystem {
 				String topic = message.getTopic();
 
 				Set<Subscriber> subscribersOfTopic = subscribersTopicMap.get(topic);
-
+				
+				if (subscribersOfTopic == null) 
+					return;
+					
 				for (Subscriber subscriber : subscribersOfTopic) {
 					List<Message> subscriberMessages = subscriber.getSubscriberMessages();
 					subscriberMessages.add(message);
+					subscriber.messageNotify();
 				}
 			}
 		}

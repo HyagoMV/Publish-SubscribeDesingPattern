@@ -34,7 +34,7 @@ public class Subscriber {
 		this.subscriberMessages = subscriberMessages;
 	}
 
-	public void printMessages() {
+	public void messageNotify() {
 		for (Message message : subscriberMessages) {
 			System.out.println("Message Topic -> " + message.getTopic() + " : " + message.getPayload());
 		}

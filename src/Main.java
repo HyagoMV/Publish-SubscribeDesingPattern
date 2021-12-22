@@ -7,16 +7,16 @@ public class Main {
 
 	public static void main(String[] args) {
 		MessagingSystem system = new MessagingSystem();
-		
-		Message msg1 = new Message("Java", "Core Java Concepts");
-		Publisher.publish(msg1, system);
 
-		Subscriber a = new Subscriber();
-		a.addSubscriber("Java", system);
+		Publisher.publish(new Message("A", "Fooooooo"), system);
+		Publisher.publish(new Message("B", "Barrrrrr"), system);
+		Publisher.publish(new Message("C", "Gaaaaaaa"), system);
+
+		new Subscriber().addSubscriber("A", system);
+		new Subscriber().addSubscriber("A", system);
+		new Subscriber().addSubscriber("B", system);
 
 		system.broadcast();
-		
-		a.printMessages();
 	}
 
 }
