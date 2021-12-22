@@ -1,23 +1,23 @@
 # Publishers (Criadores)
-- S„o entidade que criam/publicam um `messages`
-- N„o tem conhecimento sobre os `Subscribers`
+- S√£o entidade que criam/publicam um `messages`
+- N√£o tem conhecimento sobre os `Subscribers`
 - Conhecem o `Messaging System` para publicarem as `messages`
 
 # Subscribers (Leitores)
-- S„o entidade que leem\consomem um `messages` plublicada
-- N„o tem conhecimento sobre os `Publishers`
+- S√£o entidade que leem\consomem um `messages` plublicada
+- N√£o tem conhecimento sobre os `Publishers`
 - Registram-se no `Messaging System` para consumerem as `messages` de interesse
 
 # Messaging System (Infra.)
-- Entidade que notificar· os `Subscribers` registrados que uma menssagem de interesse foi publicada por um `Publisher` 
-- Atua como intermedi·rio entre `Publishers-Subscribers`
+- Entidade que notificar√° os `Subscribers` registrados que uma menssagem de interesse foi publicada por um `Publisher` 
+- Atua como intermedi√°rio entre `Publishers-Subscribers`
 
 # Publish & Subscribe Pattern Vs. Observer Pattern 
-- S„o `patterns` com caracteristicas semelhantes com duas diferenÁas principais:
-	- Primeira DiferenÁa:
-		- No `Observer Pattern` os `Observers` conhecem os `observables`
-		- No `Publish & Subscribe Pattern` os `Publish` n„o conhecem os `Subscribe` e vice-versa
-	- Segunda DefirenÁa:
-		- No `Observer Pattern` È implementado de forma **sÌncrona**
-			- Quando ocorre um `event` o `observables` invoca o mÈtodo apropriado de todos os `observables`
-		- No `Publish & Subscribe Pattern` È implementado de forma **assÌncrona**
+- S√£o `patterns` com caracteristicas semelhantes com duas diferen√ßas principais:
+	- Primeira Diferen√ßa:
+		- No `Observer Pattern` os `Observers` conhecem os `Observables`
+		- No `Publish & Subscribe Pattern` os `Publish` n√£o conhecem os `Subscribe` e vice-versa
+	- Segunda Defiren√ßa:
+		- No `Observer Pattern` √© implementado de forma **s√≠ncrona**
+			- Quando ocorre um `event` o `Observables` invoca o m√©todo apropriado de todos os `Observables`
+		- No `Publish & Subscribe Pattern` √© implementado de forma **ass√≠ncrona**
